@@ -1,12 +1,9 @@
-const item = ({params}) => {
-    const [slug1, slug2] = params.slug;
-  return (
-    <div>
-      <p>example: url : "/dashboard/product/item1/item2</p>
-      <p>item1: {slug1}</p>
-      <p>item2 : {slug2}</p>
-    </div>
-  )
-}
+import DisplayParams from "@/app/util/displayParams";
 
-export default item
+const item = ({ params }) => {
+  return (
+    <DisplayParams params={params}/>
+  );
+};
+
+export default item;
